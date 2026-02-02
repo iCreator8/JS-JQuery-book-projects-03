@@ -1,8 +1,8 @@
 // Set up the object
 var hotel = {
   name : 'Quay',
-  rooms : 40,
-  booked : 25,
+  rooms : 55,
+  booked : 28,
   checkAvailability : function() {
     return this.rooms - this.booked; // Need "this" because inside function
   }
@@ -19,3 +19,7 @@ elRooms.textContent = hotel.checkAvailability();   // Update HTML with property 
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML on lines 13 and 16, but note the security issues on p228-231
 */
+
+
+
+

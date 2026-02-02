@@ -1,7 +1,7 @@
 // Set up the object
 var hotel = {
   name : 'Park',
-  rooms : 120,
+  rooms : 150,
   booked : 77,
   checkAvailability : function() {
     return this.rooms - this.booked; // Need "this" because inside function
@@ -19,3 +19,22 @@ elRooms.textContent = hotel.checkAvailability();   // Update HTML with property 
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML on lines 13 and 16, but note the security issues on p228-231
 */
+
+var Book = {};
+Book.title = "The Great Gatsby";
+Book.author = "F. Scott Fitzgerald";
+Book.pages = 180;
+
+var elTitle = document.getElementById('bookTitle');
+elTitle.textContent = Book.author;
+
+
+
+var Book = new Object();
+Book.title = "The Great Gatsby";
+Book.author = "F. Scott Fitzgerald";
+Book.pages = 180;
+
+var elTitle = document.getElementById('bookTitle');
+elTitle.textContent = Book.title;
+console.log(Book);

@@ -2,7 +2,7 @@
 var hotel = new Object();
 
 hotel.name = 'Park';
-hotel.rooms = 120;
+hotel.rooms = 155;
 hotel.booked = 77;
 hotel.checkAvailability = function() {
   return this.rooms - this.booked;  
@@ -18,3 +18,6 @@ elRooms.textContent = hotel.checkAvailability();   // Update HTML with result of
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML on lines 12 and 15, but note the security issues on p228-231
 */
+
+hotel.rooms = 2000;
+elRooms.textContent = hotel.checkAvailability();   // Update HTML with result of method
