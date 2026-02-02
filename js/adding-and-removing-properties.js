@@ -8,6 +8,7 @@ var hotel = {
 hotel.gym = true;
 hotel.pool = false;
 delete hotel.booked;
+hotel.name = 'Matildas';
 
 // Update the HTML
 var elName = document.getElementById('hotelName'); // Get element
