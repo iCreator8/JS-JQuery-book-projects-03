@@ -1,5 +1,5 @@
 // Create a variable to hold the number that will be used
-var originalNumber = 10.23456;
+var originalNumber = 15.4523678;
 // Create a variable to hold a message that will be shown on the page
 var msg = '<h2>original number</h2><p>' + originalNumber + '</p>';
 // Round the number to 3 decimal places and add it to the msg variable
